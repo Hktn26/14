@@ -1,0 +1,86 @@
+/* Genel stil */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('background.jpg');
+    background-size: cover;  /* Resmi ekranın tamamına sığdır */
+    background-position: center; /* Resmi ortalayarak yerleştir */
+    background-attachment: fixed; /* Arka planın sabit kalmasını sağlar */
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.6);  /* Opaklığı daha da düşürerek daha şeffaf hale getirdik */
+    padding: 20px;  /* Kartın içindeki boşluğu biraz daha küçülttük */
+    border-radius: 15px;
+    text-align: center;
+    width: 80%;  /* Kartın genişliğini biraz daha küçültüyoruz */
+    max-width: 350px;  /* Maksimum genişliği 350px ile sınırlandırdık */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);  /* Gölgelendirmeyi biraz daha belirginleştirdik */
+}
+
+.card h1 {
+    font-size: 22px;  /* Başlık boyutunu biraz küçülttük */
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #333;
+}
+
+/* Mobil uyumlu düzenleme */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    .card {
+        padding: 20px;
+        width: 70%;  /* Kartı mobilde biraz daha geniş tutuyoruz */
+        max-width: none; /* Max genişlik sınırlamasını kaldırıyoruz */
+    }
+    h1 {
+        font-size: 20px;  /* Mobilde başlık fontunu küçültüyoruz */
+    }
+    button {
+        font-size: 14px;  /* Buton fontunu mobilde küçültüyoruz */
+    }
+}
+
+/* Daha küçük ekranlar için düzenlemeler */
+@media (max-width: 480px) {
+    .card {
+        padding: 8px;
+    }
+    h1 {
+        font-size: 15px;
+    }
+    button {
+        padding: 8px 15px;
+    }
+}

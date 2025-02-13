@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijital Mesaj Kartı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="card-content">
+            <h1>Özel Mesaj Kartı</h1>
+            <button id="startButton" onclick="startMusic()">Müziği Başlat</button>
+            <button onclick="showMessage()">Mesajı Göster</button>
+            <div id="message" class="hidden">
+                <p>Her anımda seninle olmak, dünya üzerindeki en güzel hediye. Seninle geçirdiğim her saniye, ömrümün en değerli anı. Sevgililer Günümüz kutlu olsun, seni her geçen gün daha çok seviyorum. Minik tatlı bebikim. ❤️💕</p>
+                <p style="font-size: 20px;">😽</p>
+            </div>
+        </div>
+        <!-- Müzik, ancak başlangıçta çalmayacak -->
+        <audio id="background-music" loop>
+            <source src="music.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
